@@ -8,6 +8,7 @@
   --color-3b4149: #3b4149;
   --color-febd69: #febd69;
   --color-232f3e: #232f3e;
+  --color-bf4800: #febd69;
 }
 
 body{
@@ -32,6 +33,37 @@ a{
 }
 .gap-30{
   gap: 30px;
+}
+.gap-20{
+  gap:20px;
+}
+.gap-40{
+  gap: 40px;
+}
+.button{
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  padding: 10px 30px;
+  border-radius: 15px;
+}
+.buttonCog{
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 10px 30px;
+  border-radius: 15px;
+}
+.button:hover{
+  background-color: var(--color-febd69);
+  color: #131921;
+}
+.card-wrapper{
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
+  color: #131921;
+  font-size: 50px;
 }
 
 /* Header Part*/
@@ -106,3 +138,116 @@ footer:not(:first-child){
 }
 
 /* Footer Part End Here */
+.main-banner-content{
+  top: 10%;
+  left: 5%;
+}
+.main-banner-content h4{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: red;
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.main-banner-content h5{
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 54px;
+  color: white;
+  letter-spacing: -2px;
+  text-transform: none;
+}
+.main-banner-content p{
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.4;
+}
+
+.img-fluid2{
+  width: 290px; height: 204px;
+  border-radius: 10px;
+}
+.small-banner-content{
+  top: 15%;
+  left: 10%;
+
+}
+.small-banner-content h4{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  color: red;
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.small-banner-content h5{
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34px;
+  color: black;
+  letter-spacing: -2px;
+  text-transform: none;
+}
+.small-banner-content p{
+  color: black;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.4;
+}
+.small-banner{
+  width: 49%;
+}
+/* Home page css */
+.home-wrapper-2{
+  background-color: #f5f5f7;  
+}
+.services h6{
+  margin-bottom: 0;
+  padding-top: 5px;
+}
+.services p{
+  margin-bottom: 0;
+  padding-top: 5px;
+}
+
+.categories{
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
+}
+
+/*Blog Card */
+.product-image {
+  position: relative;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.favorite-icon.active {
+  color: red;
+}
+.star-icon {
+  color: gray;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.star-icon.active {
+  color: gold;
+}
+
+.selected-rating {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
