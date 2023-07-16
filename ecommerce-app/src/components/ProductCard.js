@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faStar } from '@fortawesome/free-solid-svg-icons';
 
-
-export const ProductCard = () => {
+const ProductCard = ({ product }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const [rating, setRating] = useState(0);
 
@@ -34,24 +32,25 @@ export const ProductCard = () => {
   return (
     <div className="col-3 product-card">
       <div className="product-image">
-        <img src="images/tequilabanner.jpg" alt="productimage" className="img-fluid" />
-        <div className={`favorite-icon ${isFavorite ? 'active' : ''}`} onClick={toggleFavorite}>
-          <FontAwesomeIcon icon={faHeart} className="heart-icon" />
+        <div className="image-wrapper">
+          <div className="image-container">
+            <img src={product.image} alt="productimage" className="img-fluid" />
+          </div>
+          <div className={`favorite-icon ${isFavorite ? 'active' : ''}`} onClick={toggleFavorite}>
+            <FontAwesomeIcon icon={faHeart} className="heart-icon" />
+          </div>
         </div>
       </div>
       <div className="product-details">
-        <h4 className="product-title">Product Title</h4>
-        <p className="product-price">$19.99</p>
+        <h4 className="product-title">{product.name}</h4>
         <div className="rating-container">
           {renderStars()}
           <p className="selected-rating">{rating} stars</p>
         </div>
+        <p className="product-price">${product.price}</p>
       </div>
     </div>
   );
 };
 
 export default ProductCard;
-
-
-

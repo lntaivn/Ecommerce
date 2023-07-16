@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Marquee from 'react-fast-marquee'
-import { ProductCard } from '../components/ProductCard'
+import ProductList from '../hooks/ProductList'
 
 const Home = () => {
   return (
@@ -122,10 +122,17 @@ const Home = () => {
             <div className="col-12">
               <h3 className='section-heading'>Featured Collection</h3>
             </div>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
+            <ProductList/>
+          </div>
+        </div>
+      </section>
+      <section className='blog-wrapper py-5 home-wrapper-2'>
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className='section-heading'>BEST SALE</h3>
+            </div>           
+            <ProductList/>
           </div>
         </div>
       </section>
