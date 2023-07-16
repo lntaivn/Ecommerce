@@ -172,10 +172,6 @@ footer:not(:first-child){
   letter-spacing: 0.4;
 }
 
-.img-fluid2{
-  width: 290px; height: 204px;
-  border-radius: 10px;
-}
 .small-banner-content{
   top: 15%;
   left: 10%;
@@ -277,4 +273,10 @@ footer:not(:first-child){
   font-size: 14px;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  /* Điều chỉnh giao diện cho màn hình có độ rộng tối đa 768px */
+}
 
+@media screen and (max-width: 576px) {
+  /* Điều chỉnh giao diện cho màn hình có độ rộng tối đa 576px */
+}
