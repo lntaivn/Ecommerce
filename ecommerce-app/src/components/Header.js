@@ -68,7 +68,7 @@ const Header = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-12'>
-              <div className='menu-bottom d-flex align-items-center justify-content-between'>
+              <div className='menu-bottom d-flex align-items-center gap-3'>
                 <div>
                   <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -82,12 +82,12 @@ const Header = () => {
                     </ul>
                   </div>
                 </div>
-                <div className='menu-links'>
-                  <div className='d-flex align-items-center gap-2 center'>
-                    <NavLink exact to='/' activeClassName='active'>Home</NavLink>
-                    <NavLink to='/store' activeClassName='active'>Store</NavLink>
-                    <NavLink to='/blogs' activeClassName='active'>Blogs</NavLink>
-                    <NavLink to='/contact' activeClassName='active'>Contact</NavLink>
+                  <div className='menu-links'>
+                    <div className='d-flex align-items-center gap-15 center'>
+                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to=''>Store</NavLink>
+                    <NavLink to=''>Blogs</NavLink>
+                    <NavLink to='/contact'>Contact</NavLink>
                   </div>
                 </div>
               </div>
