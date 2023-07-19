@@ -280,3 +280,23 @@ footer:not(:first-child){
 @media screen and (max-width: 576px) {
   /* Điều chỉnh giao diện cho màn hình có độ rộng tối đa 576px */
 }
+
+.sale-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.sale-icon {
+  margin-right: 5px;
+}
+.price-old {
+  text-decoration: line-through;
+}
+

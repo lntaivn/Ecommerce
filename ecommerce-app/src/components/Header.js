@@ -34,25 +34,25 @@ const Header = () => {
             </div>
             <div className='col-lg-5 col-md-3 col-12'>
               <div className='header-upper-links d-flex align-items-center justify-content-end'>
-                <div className='d-flex align-items-center gap-2'>
+                <div className='d-flex align-items-center gap-2 text-white'>
                   <img src="/images/compare2.png" alt="compare" />
                   <p className='mb-0'>
                     Compare <br /> Products
                   </p>
                 </div>
-                <div className='d-flex align-items-center gap-2'>
+                <div className='d-flex align-items-center gap-2 text-white'>
                   <img src="/images/heart.png" alt="wishlist" />
                   <p className='mb-0'>
                     Favourite <br /> Wishlist
                   </p>
                 </div>
-                <div className='d-flex align-items-center gap-2'>
+                <div className='d-flex align-items-center gap-2 text-white'>
                   <img src="/images/user1.png" alt="user" />
                   <p className='mb-0'>
                     Login <br /> My Account
                   </p>
                 </div>
-                <div className='d-flex align-items-center gap-2'>
+                <div className='d-flex align-items-center gap-2 text-white'>
                   <img src="/images/cart.png" alt="cart" />
                   <div className='d-flex flex-column gap-2'>
                     <span className='badge bg-white text-dark'>0</span>

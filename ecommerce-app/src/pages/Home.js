@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Marquee from 'react-fast-marquee'
 import ProductList from '../hooks/ProductList'
+import ProductListSale from '../hooks/ProductListSale'
 
 const Home = () => {
   return (
@@ -127,7 +128,7 @@ const Home = () => {
             <div className="col-12">
               <h3 className='section-heading'>BEST SALE</h3>
             </div>
-            <ProductList />
+            <ProductListSale />
           </div>
         </div>
       </section>
